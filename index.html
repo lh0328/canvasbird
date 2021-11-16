@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>飞翔小鸟</title>
+    <style>
+        html,body {
+            background-color: black;
+        }
+        canvas {
+            border: 1px solid;
+            position: absolute;
+            left: 50%;
+            margin-left: -350px;
+            cursor: url("bird/0.ico"),auto;
+        }
+        #introduce {
+            display: none;
+            width: 500px;
+            height: 95px;
+            padding: 10px;
+            background-color: #4FC1CB;
+            position: absolute;
+            top: 41%;
+            left: 50%;
+            margin-left: -250px;
+            border-radius: 5px;
+            border: 1px solid white;
+        }
+        #introduce p:last-child {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body onload="onLoad()">
+    <canvas id="cvs" width="700" height="500"></canvas>
+    <div id="introduce">
+        <p>
+            <span>操作：</span><br>
+            通过鼠标单击使小鸟短暂飞起来，通过鼠标双击会让小鸟飞的更高。
+        </p>
+    </div>
+    <script src="index.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
